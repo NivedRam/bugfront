@@ -42,7 +42,7 @@ function View() {
     console.log(data);
     alert("Bug Added Successfully")
 
-    // window.location.reload(false)
+    window.location.reload(false)
 
 
   }

@@ -15,6 +15,7 @@ function App() {
     <Route path='/' element={<View/>} />
     <Route path='/show-view' element={<Showbugs/>} />
     <Route path='/bugview/:bugid' element={<Bugview/>} />
+    
 
   
    </Routes>

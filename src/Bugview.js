@@ -96,6 +96,9 @@ function Bugview() {
                       <Card.Text>
                        File URL: {bugdata.fileUrl}
                       </Card.Text>
+                      <Card.Text>
+                       Priority: {bugdata.priority}
+                      </Card.Text>
                <button >Delete</button>
                <button>Update</button> 
                     </Card.Body>

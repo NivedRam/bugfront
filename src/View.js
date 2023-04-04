@@ -54,9 +54,10 @@ function View() {
 
     setUsers(data); 
   }
-  useEffect(() => {
-    getUsers();
-  }, []);
+
+useEffect(() => {
+  getUsers();
+}, []);
   return (
     <div> <Navbar bg="dark" variant="dark" >
     <Container>
@@ -152,8 +153,17 @@ function View() {
         <input type="text" name='reporter' placeholder='reporter' onChange={handleform}></input>
        
         <input type="text" name='fileUrl'placeholder='fileUrl' onChange={handleform}></input>
-        <button type="submit"> submit</button>
         
+        <label>Priority</label>
+        <select onChange={handleform} id='priorities' name='priority'>
+        <option>.......</option>
+
+        <option>Top</option>
+          <option>Intermediate</option>
+          <option>Low</option>
+        </select>
+        <button type="submit"> submit</button>
+
 
       </form>
 
